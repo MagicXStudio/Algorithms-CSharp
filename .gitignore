@@ -11,3 +11,4 @@ C-Sharp.sln.DotSettings.user
 bin/
 obj/
 TestResults/
+*.log

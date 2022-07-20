@@ -10,7 +10,7 @@ namespace Awesome.BasicTips
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        static string IntToString(int value)
+        public static string IntToString(int value)
         {
             int n = value >= 0 ? value : -value;
             unsafe
@@ -35,7 +35,7 @@ namespace Awesome.BasicTips
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        private static unsafe ulong GetAsciiStringAsLong(string str)
+        public static unsafe ulong GetAsciiStringAsLong(string str)
         {
             byte[] bytes = Encoding.ASCII.GetBytes(str);
             //fixed用于修复数组，以便可以将其地址传递给采用指针的方法
